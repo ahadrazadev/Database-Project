@@ -1,1 +1,12 @@
 
+## Table: clients
+
+```sql
+CREATE TABLE clients (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    phone VARCHAR(20) NULL,
+    address VARCHAR(200) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
