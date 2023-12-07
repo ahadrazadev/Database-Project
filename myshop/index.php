@@ -1,17 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Clients List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btn-sm {
+            margin: 2px;
+        }
+
+        .btn-new-client {
+            margin-top: 20px;
+            background-color: #28a745;
+            border-color: #28a745;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-new-client:hover {
+            background-color: #218838;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #343a40;
+        }
+
+        .btn-edit:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+            color: #343a40;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .btn-delete:hover {
+            background-color: #c82333;
+            border-color: #c82333;
+        }
+        
+    </style>
 </head>
-<body>   
+
+<body>
     <div class="container my-5">
-        <h2>Lists of clients</h2>
-        <a class="btn btn-primary" href="/myshop/create.php" role="button">New Clients</a>
-        <br>
-        <table class="table">
+        <h2>Client List</h2>
+        <a class="btn btn-primary btn-new-client" href="/myshop/create.php" role="button">Add New Client</a>
+        <table class="table mt-4">
             <thead>
                 <tr>
                     <th>ID</th>
