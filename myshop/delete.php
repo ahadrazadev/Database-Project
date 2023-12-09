@@ -1,4 +1,6 @@
 <?php
+ob_start(); // Start output buffering
+
 if (isset($_GET["id"])) {
     $id = $_GET["id"];
 
@@ -41,5 +43,9 @@ if (isset($_GET["id"])) {
 
     // Close the connection
     $connection->close();
+    
+    ob_end_flush(); // Flush the output buffer
+    header("Location: index.php"); // Redirect to index.php
+    exit(); // Make sure that no other code is executed after the redirect
 }
 ?>
