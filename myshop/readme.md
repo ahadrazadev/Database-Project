@@ -1,9 +1,9 @@
 ## Screen Shots
 ![Capture](https://github.com/ahadrazadev/Database-Project/assets/147371347/80f473e9-993e-424d-83d0-4bc622fac973)
 
-![Capture 1](https://github.com/ahadrazadev/Database-Project/assets/147371347/566a5fb1-77f4-414d-8afe-0315ae4f63dd)
 
 ## Table: clients
+![22](https://github.com/ahadrazadev/Database-Project/assets/147371347/e585abf7-1636-4014-b678-ebe32c4420ab)
 
 ```sql
 CREATE TABLE clients (
