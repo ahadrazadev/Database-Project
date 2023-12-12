@@ -2,9 +2,9 @@
 ![Capture](https://github.com/ahadrazadev/Database-Project/assets/147371347/80f473e9-993e-424d-83d0-4bc622fac973)
 
 
-## Table: clients
 ![22](https://github.com/ahadrazadev/Database-Project/assets/147371347/e585abf7-1636-4014-b678-ebe32c4420ab)
 
+## Paste this in your mysql page
 ```sql
 CREATE TABLE clients (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
