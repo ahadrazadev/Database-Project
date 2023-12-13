@@ -32,7 +32,8 @@ if (isset($_GET["id"])) {
         if ($stmt->error) {
             echo "Error: " . $stmt->error;
         } else {
-            echo "Record with id=$id deleted successfully.";
+            // Display message dialog box using JavaScript
+            echo "<script>alert('Record deleted successfully.'); window.location.href='index.php';</script>";
         }
 
         // Close the statement
@@ -43,9 +44,8 @@ if (isset($_GET["id"])) {
 
     // Close the connection
     $connection->close();
-    
+
     ob_end_flush(); // Flush the output buffer
-    header("Location: index.php"); // Redirect to index.php
     exit(); // Make sure that no other code is executed after the redirect
 }
 ?>
